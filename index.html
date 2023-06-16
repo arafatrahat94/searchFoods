@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Db</title>
+    <!-- tailwidscripts -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mb-20">
+        <!-- top nav bar -->
+        <section id="top-Nav">
+            <div class="navbar bg-base-100 w-100 md:w-9/12 mx-auto my-4">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-2xl font-bold">Tasty HUT</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-yellow-400 text-black font-bold">Button</a>
+                </div>
+              </div>
+        </section>
+        <!-- top banner part -->
+        <section>
+          <div class="lg:max-w-6xl  md:max-w-3xl md:mx-auto mx-3 my-10">
+             <div class="md:max-w-2xl bg-gray-900 rounded-lg lg:max-w-4xl xl:max-w-full mx-auto block ">
+              <img src="images/banner_1.png" class="rounded-lg opacity-50" alt="...">
+             </div>
+              <div class="absolute top-36 right-0 left-0 md:top-32 lg:top-40 xl:top-60 text-white">
+                <div >
+                  <h5 class="text-2xl md:text-5xl lg:text-7xl font-bold  text-center">Taste Our Delicious<br> Best Foods</h5>
+                </div>
+                <div class="flex justify-center items-center mt-5 md:mt-8">
+                      <div class="flex">
+                          <input type="text" id="searchFoodInput" placeholder="Search your services" class="input text-black rounded-b-lg rounded-t-lg md:w-60 lg:w-72">
+                          <button id="searchFood" class="btn border-0 bg-yellow-400 text-black font-bold my-auto ml-2 px-6">Search</button>
+                      </div>
+                </div>
+              </div>
+              
+          </div>
+          </section>
+    </header>
+    <main>
+      <div id="title">
+
+        
+      </div>
+      <!-- card section -->
+      <section>
+        <div id="food-container" class="grid grid-cols-1 md:grid-cols-2 w-9/12 mx-auto gap-8 my-8">
+          
+        </div>
+      </section>
+      <div id="showAllButton" class="mx-auto hidden">
+        <div class="mx-auto w-1/4 md:w-1/12">
+          <button id="AllPro" class="btn border-0 bg-yellow-400 text-black font-bold my-auto px-6" >Show All</button>
+        </div>
+      </div>
+    </main>
+
+<!-- modal box -->
+    <section>
+      <dialog id="my_modal_3" class="modal">
+        <form method="dialog"  class="modal-box">
+          <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          <div id="forms">
+          </div>
+        </form>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer p-10 rounded-t-lg lg:w-9/12 mx-auto bg-gray-900  text-white">
+      <div>
+        <span class="footer-title">Services</span> 
+        <a class="link link-hover">Branding</a> 
+        <a class="link link-hover">Design</a> 
+        <a class="link link-hover">Marketing</a> 
+        <a class="link link-hover">Advertisement</a>
+      </div> 
+      <div>
+        <span class="footer-title">Company</span> 
+        <a class="link link-hover">About us</a> 
+        <a class="link link-hover">Contact</a> 
+        <a class="link link-hover">Jobs</a> 
+        <a class="link link-hover">Press kit</a>
+      </div> 
+      <div>
+        <span class="footer-title">Legal</span> 
+        <a class="link link-hover">Terms of use</a> 
+        <a class="link link-hover">Privacy policy</a> 
+        <a class="link link-hover">Cookie policy</a>
+      </div> 
+      <div>
+        <span class="footer-title">Newsletter</span> 
+        <div class="form-control text-black w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label> 
+          <div class="relative">
+            <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" /> 
+            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- scrpits -->
+<script src="js/meal-db.js"></script>
+</body>
+</html>
